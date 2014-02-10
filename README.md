@@ -18,13 +18,50 @@ grunt jenkins
 
 ## Documentation
 
-### Hashing
-
 
 ## Examples
 
 ```javascript
 
+var openi_utils  = require('openi-cloudlet-utils');
+
+var json_1 = {
+   '@id': '1234',
+   '@type': '5678',
+   'properties':
+   {
+      'b': ['f','g','h'],
+      'a': ['1','2','3']
+   },
+   '@context':
+   {
+      'abc': { '@id': 'foo', '@type': 'bar' },
+      'def': { '@id': 'baz', '@type': 'moo' }
+   }
+};
+
+openi_utils.hash(json_1)
+
+\\OUTPUT
+\\4542a76906b243bae19fb909b62fc437-161
+
+
+openi_utils.sort(json_1)
+
+\\OUTPUT
+\\{ '@context':
+\\   { abc: { '@id': 'foo', '@type': 'bar' },
+\\     def: { '@id': 'baz', '@type': 'moo' } },
+\\  '@id': '1234',
+\\  '@type': '5678',
+\\  properties: { a: [ '1', '2', '3' ], b: [ 'f', 'g', 'h' ] }
+\\}
+
+
+openi_utils.norm(json_1)
+
+\\OUTPUT
+\\{"@context":{"abc":{"@id":"foo","@type":"bar"},"def":{"@id":"baz","@type":"moo"}},"@id":"1234","@type":"5678","properties":{"a":["1","2","3"],"b":["f","g","h"]}}
 
 ```
 

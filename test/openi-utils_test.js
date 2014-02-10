@@ -83,6 +83,8 @@ exports['constuct'] = {
 
    'test hash' : function (test) {
 
+      console.log(openi_utils.norm(json_1))
+
       test.notEqual(JSON.stringify(json_1),                 JSON.stringify(  json_2));
       test.equals('4542a76906b243bae19fb909b62fc437-161',   openi_utils.hash(json_1));
       test.equals('4542a76906b243bae19fb909b62fc437-161',   openi_utils.hash(json_2));
@@ -117,7 +119,6 @@ exports['constuct'] = {
 
       var sorted = openi_utils.sort(obj)
 
-      console.log(sorted)
       test.equals('{"b":"2","c":"1","d":false}', JSON.stringify(openi_utils.sort(obj)) );
       test.throws(function () { openi_utils.sort(deepObj) } );
       test.ok(true);
