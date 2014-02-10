@@ -42,13 +42,13 @@ var json_1 = {
 
 openi_utils.hash(json_1)
 
-\\OUTPUT
-\\4542a76906b243bae19fb909b62fc437-161
+>>OUTPUT
+4542a76906b243bae19fb909b62fc437-161
 
 
 openi_utils.sort(json_1)
 
-#OUTPUT
+>>OUTPUT
 { '@context':
    { abc: { '@id': 'foo', '@type': 'bar' },
      def: { '@id': 'baz', '@type': 'moo' } },
@@ -60,7 +60,7 @@ openi_utils.sort(json_1)
 
 openi_utils.norm(json_1)
 
-#OUTPUT
+>>OUTPUT
 {"@context":{"abc":{"@id":"foo","@type":"bar"},"def":{"@id":"baz","@type":"moo"}},"@id":"1234","@type":"5678","properties":{"a":["1","2","3"],"b":["f","g","h"]}}
 
 ```
