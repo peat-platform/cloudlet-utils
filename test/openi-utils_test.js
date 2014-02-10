@@ -83,8 +83,6 @@ exports['constuct'] = {
 
    'test hash' : function (test) {
 
-      console.log(openi_utils.norm(json_1))
-
       test.notEqual(JSON.stringify(json_1),                 JSON.stringify(  json_2));
       test.equals('4542a76906b243bae19fb909b62fc437-161',   openi_utils.hash(json_1));
       test.equals('4542a76906b243bae19fb909b62fc437-161',   openi_utils.hash(json_2));
@@ -130,6 +128,14 @@ exports['constuct'] = {
       test.equal(   '{"@context":{"abc":{"@id":"foo","@type":"bar"},"def":{"@id":"baz","@type":"moo"}},"@id":"1234","@type":"5678","properties":{"a":["1","2","3"],"b":["f","g","h"]}}', openi_utils.norm(json_1));
       test.equal(   openi_utils.norm(json_1), openi_utils.norm(json_2));
       test.notEqual(json_1,                   json_2);
+
+      test.ok(true);
+      test.done();
+   },
+   'test randomHash' : function (test) {
+
+      test.notEqual(openi_utils.randomHash(), openi_utils.randomHash());
+      test.equal(   32, openi_utils.randomHash().length);
 
       test.ok(true);
       test.done();
