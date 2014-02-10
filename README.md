@@ -11,7 +11,7 @@ Note: npm install is only required the first time the module is built or if a ne
 
 ```bash
 git clone git@gitlab.openi-ict.eu:openi-cloudlet-utils.git
-cd openi-utils
+cd openi-cloudlet-utils
 npm install
 grunt jenkins
 ```
@@ -48,20 +48,20 @@ openi_utils.hash(json_1)
 
 openi_utils.sort(json_1)
 
-\\OUTPUT
-\\{ '@context':
-\\   { abc: { '@id': 'foo', '@type': 'bar' },
-\\     def: { '@id': 'baz', '@type': 'moo' } },
-\\  '@id': '1234',
-\\  '@type': '5678',
-\\  properties: { a: [ '1', '2', '3' ], b: [ 'f', 'g', 'h' ] }
-\\}
+#OUTPUT
+{ '@context':
+   { abc: { '@id': 'foo', '@type': 'bar' },
+     def: { '@id': 'baz', '@type': 'moo' } },
+  '@id': '1234',
+  '@type': '5678',
+  properties: { a: [ '1', '2', '3' ], b: [ 'f', 'g', 'h' ] }
+}
 
 
 openi_utils.norm(json_1)
 
-\\OUTPUT
-\\{"@context":{"abc":{"@id":"foo","@type":"bar"},"def":{"@id":"baz","@type":"moo"}},"@id":"1234","@type":"5678","properties":{"a":["1","2","3"],"b":["f","g","h"]}}
+#OUTPUT
+{"@context":{"abc":{"@id":"foo","@type":"bar"},"def":{"@id":"baz","@type":"moo"}},"@id":"1234","@type":"5678","properties":{"a":["1","2","3"],"b":["f","g","h"]}}
 
 ```
 
