@@ -10,7 +10,7 @@ To build the project enter the following commands.
 Note: npm install is only required the first time the module is built or if a new dependency is added. There are a number of grunt tasks that can be executed including: test, cover, default and jenkins. The jenkins task is executed on the build server, if it doesn't pass then the build will fail.
 
 ```bash
-git clone git@gitlab.openi-ict.eu:openi-cloudlet-utils.git
+git clone git@opensourceprojects.eu/git/p/openi/c60b/ad4e/cloudlet-utils.git
 cd openi-cloudlet-utils
 npm install
 grunt jenkins
