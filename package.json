@@ -9,7 +9,7 @@
    },
    "repository"     : {
       "type": "git",
-      "url" : "git@opensourceprojects.eu/git/p/openi/c60b/ad4e/cloudlet-utils.git"
+      "url" : "git@github.com:OPENi-ict/cloudlet-utils.git"
    },
    "bugs"           : {
       "url": ""
