@@ -2,7 +2,7 @@
   "name": "openi-cloudlet-utils",
   "description": "Utils for the OPENi Cloudlet Platform",
   "version": "0.1.0",
-  "homepage": "",
+  "homepage": "http://www.openi-ict.eu/",
   "author": {
     "name": "dmccarthy",
     "email": "dmccarthy@tssg.org"
@@ -10,9 +10,6 @@
   "repository": {
     "type": "git",
     "url": "git@github.com:OPENi-ict/cloudlet-utils.git"
-  },
-  "bugs": {
-    "url": ""
   },
   "licenses": [
     {
@@ -29,21 +26,7 @@
   },
   "devDependencies": {
     "grunt": "^0.4.5",
-    "grunt-config": "",
-    "grunt-contrib-clean": "",
-    "grunt-contrib-concat": "",
-    "grunt-contrib-jshint": "^0.10.0",
-    "grunt-contrib-nodeunit": "~0.2.0",
-    "grunt-contrib-uglify": "",
-    "grunt-contrib-watch": "~0.5.3",
-    "grunt-istanbul": "",
-    "grunt-istanbul-coverage": "",
-    "grunt-node-tap": "",
-    "grunt-plato": "",
-    "grunt-qunit-cov": "",
-    "grunt-testem": "",
-    "sinon": "",
-    "tap": ""
+    "grunt-config": ""
   },
   "dependencies": {
     "jsonminify": ""
