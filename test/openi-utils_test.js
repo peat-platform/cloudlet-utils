@@ -139,6 +139,23 @@ exports['constuct'] = {
 
       test.ok(true);
       test.done();
+   },
+   'test generate uuid' : function (test) {
+
+      console.log(openi_utils.generateUUID("object"))
+      console.log(openi_utils.generateUUID("object"))
+      console.log(openi_utils.generateUUID("object"))
+      console.log(openi_utils.generateUUID("object"))
+      console.log(openi_utils.generateUUID("object"))
+      console.log(openi_utils.generateUUID("object"))
+      console.log(openi_utils.generateUUID("object"))
+      console.log(openi_utils.generateUUID("object"))
+      openi_utils.generateUUID("attachment")
+      //test.notEqual(openi_utils.randomHash(), openi_utils.randomHash());
+      //test.equal(   32, openi_utils.randomHash().length);
+
+      test.ok(true);
+      test.done();
    }
 
 };
