@@ -1,6 +1,6 @@
 # openi-cloudlet-utils
 
-Utils for the OPENi Cloudlet Platform
+Utils for the PEAT Cloudlet Platform
 
 ## Getting Started
 Install the module with: `npm install git+ssh://git@gitlab.openi-ict.eu:openi-cloudlet-utils.git`

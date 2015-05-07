@@ -1,6 +1,6 @@
 {
   "name": "openi-cloudlet-utils",
-  "description": "Utils for the OPENi Cloudlet Platform",
+  "description": "Utils for the PEAT Cloudlet Platform",
   "version": "0.1.0",
   "homepage": "http://www.openi-ict.eu/",
   "author": {
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:OPENi-ict/cloudlet-utils.git"
+    "url": "git@github.com:peat-platform/cloudlet-utils.git"
   },
   "licenses": [
     {
