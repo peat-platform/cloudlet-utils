@@ -1,4 +1,4 @@
-var peat_utils = require('../lib/main.js')
+var peat_utils = require('../lib/cloudlet/main.js')
 
 
 for (var i = 0; i < 10; i++){
